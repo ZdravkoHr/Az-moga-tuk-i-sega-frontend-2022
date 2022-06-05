@@ -1,0 +1,22 @@
+$colors: (
+	primary: #66f6b1,
+	secondary: #ff3864,
+	heading: #261447,
+	text: #565b7b,
+	text-light: #82869e,
+	text-dark: #363a50,
+	border: #d6dce9,
+	brand: #f3f4f6,
+	dark: #e8ebee,
+	darker: #dde2e6,
+	white: #ffffff,
+	error: #ff0500,
+	success: #4fcb32,
+	gray: #979dbf,
+);
+
+:root {
+	@each $name, $color in $colors {
+		--clr-#{$name}: #{$color};
+	}
+}

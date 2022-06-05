@@ -1,0 +1,65 @@
+.advantages {
+  background: var(--clr-heading);
+}
+.advantages .content-holder {
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.advantages .scooter-holder {
+  position: relative;
+  left: -100px;
+  width: 151%;
+  height: 94%;
+}
+.advantages img {
+  width: 100%;
+}
+.advantages .section-heading,
+.advantages h3 {
+  color: var(--clr-white);
+}
+.advantages .section-heading {
+  margin-bottom: 4rem;
+}
+.advantages .green-lines {
+  margin-top: 1.8rem;
+}
+.advantages .advantage {
+  margin-block: 2rem;
+}
+.advantages .advantage-text {
+  color: var(--clr-gray);
+  font-size: 0.9rem;
+  margin-top: 10px;
+  width: 65%;
+}
+.advantages .btn-download {
+  color: var(--clr-heading);
+}
+.advantages .btn-download:hover {
+  color: var(--clr-white);
+}
+@media (max-width: 1300px) {
+  .advantages .scooter-holder {
+    width: 200%;
+  }
+  .advantages .content-holder {
+    padding-inline: 1.5rem;
+  }
+}
+@media (max-width: 1100px) {
+  .advantages .content-holder {
+    grid-template-columns: 1fr;
+  }
+  .advantages .scooter-holder {
+    width: 180%;
+    top: 80px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  .advantages .scooter-holder {
+    max-width: 800px;
+  }
+}

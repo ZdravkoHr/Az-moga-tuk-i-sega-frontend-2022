@@ -1,0 +1,51 @@
+@use 'partials/colors';
+@use 'utilities';
+@use 'components/navbar';
+@use 'components/header';
+@use 'components/how-it-works';
+@use 'components/advantages';
+@use 'components/prices';
+@use 'components/our-scooters';
+@use 'components/app';
+@use 'components/about';
+@use 'components/faq';
+@use 'components/footer';
+
+@import 'mixins/flex';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--clr-brand);
+	font-family: 'Manrope', sans-serif;
+	overflow-x: hidden;
+}
+
+p {
+	line-height: 28px;
+}
+
+@font-face {
+	font-family: 'Kelson';
+	src: url('../fonts/Kelson/Commercial/TTF/KelsonSansBG-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Kelson';
+	src: url('../fonts/Kelson/Commercial/TTF/KelsonSansBG-Normal.ttf');
+}
+
+@media (max-width: 1100px) {
+	.zip-holder {
+		display: none;
+	}
+}

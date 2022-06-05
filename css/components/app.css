@@ -1,0 +1,55 @@
+.app {
+  margin-top: 17rem;
+  background: var(--clr-heading);
+}
+.app .img-holder {
+  width: 1300px;
+  align-self: self-start;
+}
+.app img {
+  width: 100%;
+}
+.app .content-holder {
+  display: flex;
+  place-items: center;
+  grid-column-gap: 5rem;
+}
+.app .section-heading {
+  color: var(--clr-white);
+}
+.app .primary-info {
+  color: var(--clr-white);
+  margin-block: 2rem;
+}
+.app .secondary-info {
+  font-size: 0.9rem;
+  color: var(--clr-gray);
+}
+.app .text-part {
+  padding-block: 3rem;
+}
+.app .btn-download {
+  margin-block: 2rem;
+  color: var(--clr-heading);
+}
+.app .btn-download:hover {
+  color: var(--clr-white);
+}
+@media (max-width: 1100px) {
+  .app .text-part {
+    padding-bottom: 1rem;
+  }
+  .app .content-holder {
+    flex-direction: column-reverse;
+  }
+  .app .img-holder {
+    margin: auto;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .app.img-holder {
+    width: 1500px;
+  }
+}

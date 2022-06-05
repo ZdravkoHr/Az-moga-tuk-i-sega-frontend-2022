@@ -1,0 +1,78 @@
+@import '../mixins/flex';
+.faq {
+	.zip-holder {
+		position: absolute;
+		z-index: -1;
+		top: -52px;
+		left: -189px;
+	}
+	.img-holder {
+		z-index: -1;
+	}
+	.img-holder:first-child {
+		position: absolute;
+		left: -500px;
+	}
+
+	.img-holder:nth-child(2) {
+		position: absolute;
+		right: -500px;
+	}
+
+	color: #555a7a;
+	.inner-container {
+		width: 60%;
+	}
+
+	.intro-info {
+		width: 60%;
+		text-align: center;
+		margin: 1.5rem auto;
+	}
+
+	.questions-holder {
+		margin-block: 3rem;
+	}
+
+	.question {
+		border: 1px solid var(--clr-border);
+		border-left: 0;
+		border-right: 0;
+		padding: 2rem 0.25rem;
+	}
+
+	.question-header {
+		@include flex(space-between, center);
+		font-weight: bold;
+
+		i {
+			color: var(--clr-primary);
+			font-size: 1.7rem;
+		}
+	}
+
+	.additional-info {
+		margin-block: 0.75rem;
+		font-size: 0.95rem;
+		text-align: center;
+	}
+
+	.answer p {
+		margin-top: 2rem;
+	}
+
+	.btn-primary {
+		margin: 3.5rem auto;
+		display: block;
+	}
+
+	@media (max-width: 1100px) {
+		.img-holder {
+			display: none;
+		}
+
+		.inner-container {
+			width: 100%;
+		}
+	}
+}
